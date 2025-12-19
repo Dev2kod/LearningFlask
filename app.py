@@ -3,7 +3,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def welcome():
-    return'This is my First Flask Project'
+    return'Flask Project'
+
+@app.route('/users')
+def users():
+    return'user page'
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
