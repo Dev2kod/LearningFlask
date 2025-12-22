@@ -14,10 +14,10 @@ def home():
          "age": age}
             )
 
-@app.route("/show",methods=["POST"])
-def vasu():
+@app.route("/show",methods=["GET","POST"])
+def dev():
     data = request.args.get("data","null")
-    return json.dumps({
+    return json.dumps({ 
         "data":data
     })
 

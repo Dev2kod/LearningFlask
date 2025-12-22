@@ -3,6 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def welcome():
+    print('home page rendering')
     return'Flask Project'
 
 @app.route('/users')
